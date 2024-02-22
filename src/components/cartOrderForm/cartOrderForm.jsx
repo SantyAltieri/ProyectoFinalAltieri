@@ -101,8 +101,10 @@ const CartOrderForm = () => {
     return (
     <div className='itemDiv' >
       <br></br>
+      <br></br>
       <h3>Disco: {product.name}</h3>
       <h3>Cantidad: {product.quantity}</h3>
+      <h3>Precio: {(product.price * product.quantity)}</h3>
       <img src= {product.img} widht="400" height="200"/>
     </div>
     );
